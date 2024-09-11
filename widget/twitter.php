@@ -9,10 +9,10 @@ $twitter_tweetcount = 1;
 
 class admired_widget_twitter extends WP_Widget{
 	
-	function admired_widget_twitter(){
+	function __construct(){
 		$widget_ops = array('classname' => 'admired-twitter', 'description' => __('Display your recent Twitter status.', 'admired'));
 		$control_ops = array('id_base' => 'admired-twitter');
-		$this->WP_Widget('admired-twitter', 'Admired Twitter Status', $widget_ops, $control_ops);
+		parent::__construct('admired-twitter', 'Admired Twitter Status', $widget_ops, $control_ops);
 	}
 	
 	function widget($args, $instance){	

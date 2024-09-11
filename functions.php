@@ -165,7 +165,7 @@ function admired_scroll_top() {
 	if ( isset ($options['admired_remove_scroll_top']) &&  ($options['admired_remove_scroll_top'] != "")) { echo "";} else { ?>
 
 <script type="text/javascript">
-	jQuery('a[href^="#admired-top"]').live('click',function(event){
+	jQuery('a[href^="#admired-top"]').on('click',function(event){
 		event.preventDefault();
 		var target_offset = jQuery(this.hash).offset() ? jQuery(this.hash).offset().top : 0;
 		jQuery('html, body').animate({scrollTop:target_offset}, 800);

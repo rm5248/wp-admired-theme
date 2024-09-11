@@ -3,9 +3,9 @@
  * Flickr widget
  */
 class admired_flickr_widget extends WP_Widget {
-	function admired_flickr_widget() {
+	function __construct() {
 		$widget_ops = array('classname' => 'admired_flickr_feed', 'description' => __('Displays your flickr photos', "admired") );
-		$this->WP_Widget('admired_flickr_feed', __('Admired - Flickr', "admired"), $widget_ops);	
+		parent::__construct('admired_flickr_feed', __('Admired - Flickr', "admired"), $widget_ops);	
 	}
 
 	function widget($args, $instance) {
