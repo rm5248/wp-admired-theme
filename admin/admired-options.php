@@ -594,7 +594,7 @@ function admired_settings_page() {
 
 	<div class="wrap">
 		<div class="options_wrap">
-			<?php screen_icon(); ?><h2><?php echo $admired_themename; ?> <?php _e('Theme Options','admired'); ?></h2>
+			<h2><?php echo $admired_themename; ?> <?php _e('Theme Options','admired'); ?></h2>
 			<p class="top-notice"><?php _e('Customize the look of your theme with these settings. ','admired'); ?></p>
 			<?php if ( isset ( $_POST['reset'] ) ): ?>
 			<?php // Delete Settings
