@@ -51,7 +51,7 @@ $options = get_option('admired_theme_options'); ?>
 <body <?php body_class(); ?>>
 	<div id="head-wrapper">
 		<?php /* ======== TOP MENU ======== */
-		if ( isset ($options['admired_show_secondary_menu'])&&  ($options['admired_show_secondary_menu'] != "") ) {
+		if ( isset ($options['admired_show_secondary_menu'])&&  ($options['admired_show_secondary_menu'] != "0") ) {
 		get_template_part('top','menu'); } else { echo "";}?>
 		<header id="branding" role="banner">
 			<div id="header-group" class="clearfix">

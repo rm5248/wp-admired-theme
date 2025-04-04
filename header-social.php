@@ -47,7 +47,7 @@ $options = get_option('admired_theme_options');
 				$output .= '" id="admired-facebook" title="Facebook"></a></li>'."";
 				echo stripslashes($output);
 			} // Rss
-			if ( isset ($options['admired_rss_feed']) &&  ($options['admired_rss_feed']!="") ) {
+			if ( isset ($options['admired_rss_feed']) &&  ($options['admired_rss_feed']!="0") ) {
 				echo ('<li><a target="_blank" href="');
 				echo ( bloginfo( 'rss_url'));
 				echo ('" id="admired-rss" title="RSS"></a></li>');	
