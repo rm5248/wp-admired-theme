@@ -178,7 +178,7 @@
 	}
 
 	// SuperFish menu effects
-	if ( isset ($options['admired_remove_superfish']) &&  ($options['admired_remove_superfish']!="") ) {
+	if ( isset ($options['admired_remove_superfish']) &&  ($options['admired_remove_superfish']!="0") ) {
 		echo("#nav-menu2 a{ padding: .4em 1.2125em;} \n"); // Have to fix the padding missing from style.css
 	}
 	else {
@@ -210,7 +210,7 @@
 		echo("#site-description{ color: $optColor;}\n");
 	}
 	
-	if ( isset ($options['admired_hide_title_discription'])&&  ($options['admired_hide_title_discription'] != "") ) {
+	if ( isset ($options['admired_hide_title_discription'])&&  ($options['admired_hide_title_discription'] != "0") ) {
 		echo("#site-title, #site-description{ visibility: hidden;}\n");
 	}
 	if ( isset ($options['admired_search_placement'])&&  ($options['admired_search_placement'] !="Menu") ) {
@@ -259,11 +259,11 @@
 	}
 
 	//*********************************************************** Footer
-	if ( isset ($options['admired_remove_scroll_top']) &&  ($options['admired_remove_scroll_top'] != "")) {
+	if ( isset ($options['admired_remove_scroll_top']) &&  ($options['admired_remove_scroll_top'] != "0")) {
 		echo("#supplementary{padding-top: 1.625em;}\n");
 	}
 
-	if ( isset ($options['admired_hide_wp_link']) &&  ($options['admired_hide_wp_link']!="") ) {
+	if ( isset ($options['admired_hide_wp_link']) &&  ($options['admired_hide_wp_link']!="0") ) {
 		echo("#site-generator{display:none;}\n");
 	}
 	
@@ -302,7 +302,7 @@
 	if ( isset ($options['admired_search_placement'])&&  ($options['admired_search_placement'] == "Header") ) {
 		echo("div.admired-social { top: 47px;}\n");
 	}
-	if ( isset ($options['admired_show_social_icons'])&&  ($options['admired_show_social_icons'] != "") ) {
+	if ( isset ($options['admired_show_social_icons'])&&  ($options['admired_show_social_icons'] != "0") ) {
 		echo("#branding #searchform { top: 0;}\n");
 	}
 	
@@ -317,7 +317,7 @@ if ( isset ($options['admired_header_css']) &&  ($options['admired_header_css']!
 } 
 
 			//* Superfish
-if ( isset ($options['admired_remove_superfish']) &&  ($options['admired_remove_superfish']!="") ) {
+if ( isset ($options['admired_remove_superfish']) &&  ($options['admired_remove_superfish']!="0") ) {
 	echo ' ';}
 	else {
 	echo("<script>
